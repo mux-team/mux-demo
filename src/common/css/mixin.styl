@@ -1,0 +1,78 @@
+rem($value)
+    if unit($value) == "px" || unit($value) == ""
+        $value = round($value / $-base-font-size, 3)
+
+    unit($value, "rem")
+
+// border-top
+border-top-retina(w=1px, c=$-default-border-gray-color, l = 0, r = 0)
+    position relative
+
+    &:before
+        content " "
+        absolute top right r left l
+        border-top w solid c
+        transform-origin 0 0
+        transform scaleY(.5)
+
+// border-bottom
+border-bottom-retina(w=1px, c=$-default-border-gray-color, l = 0, r = 0)
+    position relative
+
+    &:after
+        content " "
+        absolute right r bottom left l
+        border-bottom w solid c
+        transform-origin 0 0
+        transform scaleY(.5)
+
+// border-right
+border-right-retina(w=1px, c=$-default-border-gray-color, t = 0, b = 0)
+    position relative
+
+    &:after
+        content " "
+        absolute top t right bottom b
+        border-right w solid c
+        transform-origin 0 0
+        transform scaleX(.5)
+
+
+// border-left
+border-left-retina(w=1px, c=$-default-border-gray-color, t = 0, b = 0)
+    position relative
+
+    &:before
+        content " "
+        absolute top t bottom b left 0
+        border-left w solid c
+        transform-origin 0 0
+        transform scaleX(.5)
+
+
+// border
+border-retina(w=1px, c=$-default-border-gray-color, radius = 0)
+    position relative
+
+    &:after
+        content ""
+        absolute top left
+        border w solid c
+        border-radius radius*2
+        width 200%
+        height 200%
+        transform-origin 0 0
+        transform scale(.5)
+
+
+overflow-ellipsis(line=1)
+    display -webkit-box
+    overflow hidden
+    text-overflow ellipsis
+    -webkit-line-clamp line
+    word-wrap break-word
+    -webkit-box-orient vertical
+
+break-word()
+    word-wrap break-word
+    word-break break-all

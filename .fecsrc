@@ -1,0 +1,20 @@
+{
+    "eslint": {
+        "env": {
+            "node": true,
+            "browser": true
+        },
+
+        "rules": {
+            "no-console": 0,
+            "fecs-no-require": -1,
+            "fecs-esnext-ext": ["js", "jsx", "es", "vue"],
+            "fecs-valid-jsdoc": false
+        },
+
+        "globals": {}
+    },
+    "htmlcs": {
+        "max-len": 120
+    }
+}
