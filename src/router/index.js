@@ -8,8 +8,6 @@ import ImageViewer2 from '../views/client/imageViewer/demo2';
 import ImageViewer3 from '../views/client/imageViewer/demo3';
 import ImageViewer4 from '../views/client/imageViewer/demo4';
 import ImageViewer5 from '../views/client/imageViewer/demo5';
-
-import ClickState from '../views/client/clickState/index';
 import Error from '../views/Error';
 
 
@@ -50,11 +48,6 @@ let router = new Router({
             path: '/imageViewer5',
             name: 'ImageViewer5',
             component: ImageViewer5
-        },
-        {
-            path: '/clickState',
-            name: 'ClickState',
-            component: ClickState
         },
         {
             path: '/error',
