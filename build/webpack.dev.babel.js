@@ -17,7 +17,7 @@ export default Object.assign({}, commonConf, {
         compress: true,
         host: '0.0.0.0',
         disableHostCheck: true,
-        port: 8848,
+        port: 8808,
         publicPath: '/dist/',
         setup(app) {
         },
