@@ -6,6 +6,20 @@
         </ul>
 
         <h2>点击态</h2>
+        <touch-active>
+        </touch-active>
+        <touch-active
+            isJump
+            :top="-5"
+            :left="-5"
+            :bottom="-5"
+            :right="-5"
+            borderRadius="5px"
+            backgroundColor="rgba(255,0,255,0.1)">
+            <router-link tag="li" to="/touchActive/1">
+                touchActive
+            </router-link>
+        </touch-active>
     </div>
 </template>
 <script>
@@ -26,7 +40,10 @@
         },
         methods: {
             goto(index) {
-                this.$router.push(`/imageViewer${index+1}`);
+                this.$router.push(`/imageViewer/${index+1}`);
+            },
+            gotoTouchActive() {
+                this.$router.push(`/touchActive/2`);
             }
         }
     };

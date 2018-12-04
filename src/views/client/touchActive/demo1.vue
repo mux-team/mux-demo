@@ -27,27 +27,22 @@
     </div>
 </template>
 <script>
-import {ResponsiveLink, TouchActive, TouchStop} from 'mux-vue-touch-active';
 export default {
-    components: {
-        TouchActive,
-        TouchStop
-    },
     props: {
-        rs: {
-            type: Object,
-            required: true
-        }
+        // rs: {
+        //     type: Object,
+        //     required: true
+        // }
     },
     methods: {
         rsStop() {
-            this.rs.stop();
+            // this.rs.stop();
         },
         rsStart() {
-            this.rs.start();
+            // this.rs.start();
         },
         rsDestroy() {
-            this.rs.destroy();
+            // this.rs.destroy();
         }
     }
 }

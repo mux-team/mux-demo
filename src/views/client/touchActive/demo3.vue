@@ -11,15 +11,6 @@
         </touch-active>
     </div>
 </template>
-<script>
-import {TouchActive, TouchStop} from 'mux-vue-touch-active';
-export default {
-    components: {
-        TouchActive,
-        TouchStop
-    }
-}
-</script>
 
 <style lang="stylus" scoped>
 @import "../../../common/css/base.styl";

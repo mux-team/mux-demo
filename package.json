@@ -50,7 +50,7 @@
     "iscroll": "^5.2.0",
     "lodash": "^4.17.10",
     "mux-vue-image-viewer": "^1.0.0",
-    "mux-vue-touch-active": "^1.0.0",
+    "mux-vue-touch-active": "^1.0.6",
     "nib": "^1.1.2",
     "vue": "^2.4.2",
     "vue-meta": "^1.5.2",
